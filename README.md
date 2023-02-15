@@ -3,12 +3,12 @@
 ## Инструкция по запуску
 
 1. Клонировать репозиторий:
-```sh
-    git clone https://github.com/TimofeevSergey/music_catalog.git
+```
+git clone https://github.com/TimofeevSergey/music_catalog.git
 ```
 2. Перейти в каталог проекта:
-```sh
-    cd music_catalog
+```
+cd music_catalog
 ```
 
 ### _Примечание:_
@@ -18,8 +18,8 @@
 эти шаги можно пропустить.
 
 3. Перейти в подкаталог:
-```sh
-    cd music_catalog
+```
+cd music_catalog
 ```
 4. В данном подкаталоге исправить файл `.env.prod`
 
@@ -33,12 +33,12 @@ CSRF_TRUSTED_ORIGINS=http://localhost http://127.0.0.1
 на котором будут установлены docker-контейнеры (требование системы безопасности django).
 
 5. Вернуться в каталог проекта:
-```sh
-    cd ..
+```
+cd ..
 ```
 
 6. Запустить создание и выполнение docker-контейнеров:
-```sh
+```
 docker-compose up --build
 ```
 
@@ -62,21 +62,21 @@ docker-compose up --build
 
 API доступен через WEB-сервер nginx по IP-адресу компьютера, на котором были развернуты docker-контейнеры:
 ```
-    http://<IP-адрес>
+http://<IP-адрес>
 ```
 или если тестируется локально:
 ```
-    http://localhost
+http://localhost
 ```
 
 Кроме того в WEB-браузере по этим же адресам доступен просмотр API и редактирование данных в формате предоставляемом djangorestframework.
 
 А по адресам:
 ```
-    http://<IP-адрес>/swagger-ui/
+http://<IP-адрес>/swagger-ui/
 ```
 или если тестируется локально:
 ```
-    http://localhost/swagger-ui/
+http://localhost/swagger-ui/
 ```
 доступен просмотр API и редактирование данных в формате предоставляемом фреймворком Swagger UI.
