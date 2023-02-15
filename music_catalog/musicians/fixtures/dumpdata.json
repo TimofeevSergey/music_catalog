@@ -1,0 +1,184 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$wSkU6CHpGfHtIqnvK60ITr$b6KsmG2UNx+Tm1FALP+kROXWqbgzC+QXswltJt48wpc=",
+            "last_login": null,
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-02-13T21:40:19.864Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "pbkdf2_sha256$390000$CUjuiTsfbgX2Uiy9NOouxt$G4Ws696PizkXf8e6js/JOVN/bQ4tK1VHUH0eBGV3Hzs=",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "fan",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2023-02-13T21:40:24.436Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "musicians.musician",
+        "pk": 1,
+        "fields": {
+            "name": "The Bangles"
+        }
+    },
+    {
+        "model": "musicians.musician",
+        "pk": 2,
+        "fields": {
+            "name": "The Cranberries"
+        }
+    },
+    {
+        "model": "musicians.album",
+        "pk": 1,
+        "fields": {
+            "musician": 1,
+            "year": "1985"
+        }
+    },
+    {
+        "model": "musicians.album",
+        "pk": 2,
+        "fields": {
+            "musician": 1,
+            "year": "1998"
+        }
+    },
+    {
+        "model": "musicians.album",
+        "pk": 3,
+        "fields": {
+            "musician": 2,
+            "year": "1993"
+        }
+    },
+    {
+        "model": "musicians.album",
+        "pk": 4,
+        "fields": {
+            "musician": 2,
+            "year": "2008"
+        }
+    },
+    {
+        "model": "musicians.song",
+        "pk": 1,
+        "fields": {
+            "name": "Manic Monday"
+        }
+    },
+    {
+        "model": "musicians.song",
+        "pk": 2,
+        "fields": {
+            "name": "Walk Like an Egyptian"
+        }
+    },
+    {
+        "model": "musicians.song",
+        "pk": 3,
+        "fields": {
+            "name": "Dreams"
+        }
+    },
+    {
+        "model": "musicians.song",
+        "pk": 4,
+        "fields": {
+            "name": "Sunday"
+        }
+    },
+    {
+        "model": "musicians.songalbum",
+        "pk": 1,
+        "fields": {
+            "song": 1,
+            "album": 1,
+            "number": 1
+        }
+    },
+    {
+        "model": "musicians.songalbum",
+        "pk": 2,
+        "fields": {
+            "song": 1,
+            "album": 2,
+            "number": 6
+        }
+    },
+    {
+        "model": "musicians.songalbum",
+        "pk": 3,
+        "fields": {
+            "song": 2,
+            "album": 1,
+            "number": 4
+        }
+    },
+    {
+        "model": "musicians.songalbum",
+        "pk": 4,
+        "fields": {
+            "song": 2,
+            "album": 2,
+            "number": 2
+        }
+    },
+    {
+        "model": "musicians.songalbum",
+        "pk": 5,
+        "fields": {
+            "song": 3,
+            "album": 3,
+            "number": 2
+        }
+    },
+    {
+        "model": "musicians.songalbum",
+        "pk": 6,
+        "fields": {
+            "song": 3,
+            "album": 4,
+            "number": 1
+        }
+    },
+    {
+        "model": "musicians.songalbum",
+        "pk": 7,
+        "fields": {
+            "song": 4,
+            "album": 3,
+            "number": 3
+        }
+    },
+    {
+        "model": "musicians.songalbum",
+        "pk": 8,
+        "fields": {
+            "song": 4,
+            "album": 4,
+            "number": 2
+        }
+    }
+]

@@ -1,0 +1,32 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres:13.10
+    privileged: true
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: music_fan
+      POSTGRES_PASSWORD: FanDBAccess
+      POSTGRES_DB: music_catalog
+  django:
+    build:
+      context: .
+    ports:
+      - 8080:8080
+    command: bash -c "
+      ./wait-for-postgres.sh db
+      && python manage.py migrate
+      && python manage.py loaddata dumpdata.json
+      && gunicorn --workers=4 --reload --max-requests=1000 music_catalog.wsgi -b 0.0.0.0:8080
+      "
+    depends_on:
+      - db
+  nginx:
+    build:
+      ./nginx
+    ports:
+      - 80:80
+    depends_on:
+      - django

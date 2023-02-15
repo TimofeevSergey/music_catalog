@@ -1,0 +1,11 @@
+asgiref==3.6.0
+backports.zoneinfo==0.2.1
+Django==4.1.6
+djangorestframework==3.14.0
+pytz==2022.7.1
+PyYAML==6.0
+sqlparse==0.4.3
+tzdata==2022.7
+uritemplate==4.1.1
+python-dotenv==0.21.1
+psycopg2==2.8.6
